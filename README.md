@@ -21,13 +21,13 @@ You can buy & sell houses with in-game coins, each house has it's own price ever
 ### Lucky Looter (Credits to [Glock9](https://www.youtube.com/playlist?list=PLc594J9-WhOxPuElG9lPf8W9Emwr0P2uW))
 The only way to earn a living is by looting or buying. Crafting is completely disabled!
 
-### Extended Vending Machines (Credits to Mr. Reach)
+### Extended Vending Machines (Credits to [Mr. Reach](https://youtu.be/XnXskuG22-s?t=5971))
 This mod adds uncraftable items to candy vending machines by traders & around the world.
 
-### Boss Raids (Credits to Blu & the Reach Gaming Community)
+### Boss Raids (Credits to [Blu & the Reach Gaming Community](https://youtu.be/XnXskuG22-s?t=6132))
 This mod adds the possibility to be attacked by a powerful raid boss at a random time each day. It's a tough fight, but beating a raid boss will provide handsome rewards.
 
-### Reach Main Menu (Credits to Mr. Reach)
+### Reach Main Menu (Credits to [Mr. Reach](https://youtu.be/prJNnxaYIPw?t=312))
 Changes the main menu background to a random patented Reach Gaming background.
 
 ### No Block Physics (Credits to Blu)
@@ -36,7 +36,7 @@ Stops blocks from falling! Build to your heart's content, bringing Minecraft rul
 ### Personal Artworker (Credits to @varicelli1 on YouTube)
 Ever wanted to have your own art, photos, backgrounds or really any image inside the game? Personal Artworker will help you do that and much more!
 
-### Reach Killshot Overlay (Credits to Mr. Reach)
+### Reach Killshot Overlay (Credits to [Mr. Reach](https://www.youtube.com/watch?v=_TrKeJFgLpo))
 Shows a quick text overlay of the zombie/animal/player you kill.
 
 ### Highway Radio (Credits to Blu)
