@@ -41,3 +41,6 @@ Shows a quick text overlay of the zombie/animal/player you kill.
 
 ### Highway Radio
 Adds an in-game radio to all vehicles. Comes prepacked with an assortment of music, but you can also add your own! Copy your music files into the Music folder contained within the mod to add them to the playlist. Supported music file formats : mp3, ogg, wav
+
+### Reach Slim HUD
+Enjoy a clean, slim HUD experience. Health, hunger bars and status effects have been slimmed down on the bottom left side of the screen. The XP meter and Level have been rounded up at the top left side of the screen together with an Elevation indicator.
