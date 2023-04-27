@@ -44,3 +44,6 @@ Adds an in-game radio to all vehicles. Comes prepacked with an assortment of mus
 
 ### Reach Slim HUD (Credits to Mr. Reach)
 Enjoy a clean, slim HUD experience. Health, hunger bars and status effects have been slimmed down on the bottom left side of the screen. The XP meter and Level have been rounded up at the top left side of the screen together with an Elevation indicator.
+
+### Animal Hordes (Credits to Mr. Reach)
+Only animals, dead or alive, will come after you during blood moons. Get 'em critters!
