@@ -47,3 +47,6 @@ Enjoy a clean, slim HUD experience. Health, hunger bars and status effects have 
 
 ### Animal Hordes (Credits to Mr. Reach)
 Only animals, dead or alive, will come after you during blood moons. Get 'em critters!
+
+### Reach Builder Tools (Credits to Mr. Reach)
+Adds new terrain manipulating tools. A builder's dream! All tools can be found by search for ReachBuilder in the creative menu.
