@@ -50,3 +50,6 @@ Only animals, dead or alive, will come after you during blood moons. Get 'em cri
 
 ### Reach Builder Tools (Credits to Mr. Reach)
 Adds new terrain manipulating tools. A builder's dream! All tools can be found by search for ReachBuilder in the creative menu.
+
+### Flush Terrain Blocks (Credits to Mr. Reach)
+Terrain blocks like sand and dirt will be flattened when placing blocks next to them. This removes the odd gap between terrain and building blocks.
