@@ -53,3 +53,6 @@ Adds new terrain manipulating tools. A builder's dream! All tools can be found b
 
 ### Flush Terrain Blocks (Credits to Mr. Reach)
 Terrain blocks like sand and dirt will be flattened when placing blocks next to them. This removes the odd gap between terrain and building blocks.
+
+### Real Infestations (Credits to Blu)
+Increases the number of zombie spawns for infested quests.
