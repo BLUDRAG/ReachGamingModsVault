@@ -1,0 +1,35 @@
+<configs>
+	<append xpath="/items">
+		<item name="ReachBuilderCubeTerrainToolRemove">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="0"/> <!-- 36 -->
+			<property name="Material" value="Msteel"/>
+			<property name="CustomIconTint" value="255,40,40"/>
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="ReachBuilderTools.Tools.ItemActionReachBuilderCubeTerrainTool, ReachBuilderTools"/>
+				<property name="Mode" value="Shrink"/>
+			</property>
+		</item>
+
+		<item name="ReachBuilderCubeTerrainToolAdd">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="0"/> <!-- 36 -->
+			<property name="Material" value="Msteel"/>
+			<property name="CustomIconTint" value="255,40,40"/>
+			<property name="CustomIcon" value="meleeToolShovelT1IronShovel"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Special Items"/>
+			<property class="Action0">
+				<property name="Class" value="ReachBuilderTools.Tools.ItemActionReachBuilderCubeTerrainTool, ReachBuilderTools"/>
+				<property name="Mode" value="Grow"/>
+			</property>
+		</item>
+	</append>
+</configs>

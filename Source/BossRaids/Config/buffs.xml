@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="buffAura">
+		<stack_type value="ignore"/>
+		<duration value="6000"/>
+		<effect_group name="run particles, cleanup">
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock" parent_transform="Spine1" local_offset="0,-.2,0" />
+		</effect_group>
+		
+		</buff>
+	</append>
+</configs>

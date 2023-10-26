@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/items/item[@name='drugEyeKandy']">
+		<property name="EconomicValue" value="500"/>
+	</append>
+	<set xpath="/items/item[@name='drugEyeKandy']/effect_group[@name='Candy Tier 1']/display_value[@name='dLootGamestageFlat']/@value">20</set>
+	<set xpath="/items/item[@name='drugEyeKandy']/effect_group[@name='Candy Tier 1']/display_value[@name='dLootGamestagePerc']/@value">.4</set>
+</configs>

@@ -1,0 +1,18 @@
+<configs>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']"/>
+	<append xpath="/quests">
+		<quest id="quest_BasicSurvival1">
+		<property name="name_key" value="LuckyLooter_Tutorial_Info"/>
+		<property name="description_key" value="LuckyLooter_Tutorial_description"/>
+		<property name="icon" value="ui_game_symbol_map_bed"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+
+		<action type="ShowTip" value="LuckyLooter_Tutorial"/>
+
+		<reward type="SkillPoints" value="4" chainreward="true"/>
+		<reward type="Item" id="bedroll" value="1"/>
+	</quest>
+	</append>
+</configs>

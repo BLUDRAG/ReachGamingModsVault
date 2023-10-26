@@ -1,0 +1,31 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="Artwork 1x1" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 1x2" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 2x1" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 2x2" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 1x3" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 2x3" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 3x1" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 3x2" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		<recipe name="Artwork 3x3" count="1">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+	</append>
+</configs>

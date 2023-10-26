@@ -1,0 +1,56 @@
+<configs>
+	<append xpath="/lootcontainers">
+		<lootgroup name="groupZpackBoss04">
+			<item group="groupRareToolsTiered" loot_prob_template="high"/>
+			<item group="booksRareOnlyScaled" loot_prob_template="medHigh"/>
+			<item group="groupWeaponsAllScaledNoStone" loot_prob_template="high"/>
+			<item group="groupMedicalRare" loot_prob_template="medHigh"/>
+			<item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/>
+			<item group="groupModAllScaled" loot_prob_template="medHigh"/>
+			<item group="vehiclePartsTiered" loot_prob_template="med"/>
+			<item name="oldCash" count="7500,10000" loot_prob_template="low"/>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackBoss05">
+			<item name="resourceClayLump" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceRockSmall" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceWood" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceScrapLead" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceScrapBrass" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceScrapIron" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceCoal" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceNail" count="1000,3000" loot_prob_template="medHigh"/>
+			<item name="resourceMetalPipe" count="1000,3000" loot_prob_template="medHigh"/>
+			<item name="resourceCrushedSand" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceOilShale" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceCement" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceCobblestones" count="3000,6000" loot_prob_template="medHigh"/>
+			<item name="resourceConcreteMix" count="3000,6000" loot_prob_template="medHigh"/>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackBoss06" count="all">
+			<item name="casinoCoin" count="12500,25000" loot_prob_template="guaranteed"/>
+			<item group="groupTreasureMaps" loot_prob_template="guaranteed"/>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackBoss07">
+			<item name="resourceForgedIron" count="300,500" loot_prob_template="med"/>
+			<item name="resourceForgedSteel" count="300,500" loot_prob_template="med"/>
+		</lootgroup>
+		
+		<lootgroup name="groupZpackRaidBoss" count="all">
+			<item group="groupAmmoLarge" count="10"/>
+			<item group="groupZpackBoss01" count="3"/>
+			<item group="groupZpackBoss02" count="3"/>
+			<item group="groupZpackBoss03" loot_prob_template="high" force_prob="true"/>
+			<item group="groupZpackBoss04" loot_prob_template="guaranteed"/>
+			<item group="groupZpackBoss05" count="1"/>
+			<item group="groupZpackBoss06" count="1"/>
+			<item group="groupZpackBoss07" count="2"/>
+		</lootgroup>
+		
+		<lootcontainer id="74" name="zPackRaidBoss" count="1" size="9,6" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="3" loot_quality_template="qualPlus1Template">
+			<item group="groupZpackRaidBoss"/>
+		</lootcontainer>
+	</append>
+</configs>

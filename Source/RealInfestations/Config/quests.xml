@@ -1,0 +1,33 @@
+<configs>		
+    <set xpath="/quests/quest[contains(@id, 'infested')]/property[@name='spawn_multiplier']/@value">100</set>
+	<set xpath="/quests/quest[@id='tier2_clear_infested']/objective[@type='RandomPOIGoto']/property[@name='poi_tier']/@value">2</set>
+	<set xpath="/quests/quest[@id='tier3_clear_infested']/variable[@name='poi_tier']/@value">3</set>
+	<set xpath="/quests/quest[@id='tier4_clear_infested']/variable[@name='poi_tier']/@value">4</set>
+	<set xpath="/quests/quest[@id='tier5_clear_infested']/variable[@name='poi_tier']/@value">5</set>
+	
+	<insertAfter xpath="/quests/quest[@id='tier2_clear_infested']">
+		<quest id="tier1_clear_infested" template="tier2_clear_infested">
+			<variable name="name" value="quest_tier1_infested_clear"/>
+			<variable name="offer" value="quest_tier1_infested_clear_offer"/>
+			<variable name="difficulty" value="1"/>
+			<variable name="extra_tags" value="infested"/>
+			<variable name="poi_tier" value="1"/>
+			<variable name="spawn_multiplier" value="2"/>
+			<variable name="gamestage_mod" value=".6"/>
+			<variable name="gamestage_bonus" value="30"/>
+			
+			<reward type="Exp" value="3500"/>
+			<reward type="Item" id="casinoCoin" value="1200"/>
+
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+	</insertAfter>
+	
+	<insertAfter xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier1_clear']">
+		<quest id="tier1_clear_infested"/>
+	</insertAfter>
+</configs>

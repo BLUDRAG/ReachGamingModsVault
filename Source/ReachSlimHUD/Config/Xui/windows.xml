@@ -1,0 +1,94 @@
+<configs>
+	<remove xpath="/windows/window[@name='HUDLeftStatBars']"/>
+	<append xpath="/windows">
+		<window name="HUDLeftStatBars">
+			<rect name="hud" pos="9,136" rows="2" cols="1" width="168" side="right">
+				<rect width="300" height="25" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
+					<sprite depth="2" name="background" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
+					<filledsprite depth="3" name="background" color="25,25,25,255" type="filled" fill="1" globalopacitymod="1.8"/>
+
+					<filledsprite depth="4" name="BarContent" color="100,100,100,128" type="filled" fill="0" globalopacitymod="1.8"/>
+					<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
+					<label depth="6" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrent}" width="75" height="35"/>
+				</rect>
+
+				<rect width="350" height="25" pos="0,-25" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+					<sprite depth="2" name="background" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
+					<filledsprite depth="3" name="background" color="25,25,25,255" width="350" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.8"/>
+
+					<filledsprite depth="5" name="BarContent" color="220,0,0,128" width="350" type="filled" fill="0" globalopacitymod="1.8"/>
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
+				</rect>
+
+				<rect width="350" height="25" pos="0,-50" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+					<sprite depth="2" name="background" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
+					<filledsprite depth="3" name="background" color="25,25,25,255" width="350" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.8"/>
+
+					<filledsprite depth="5" name="BarContent" color="0,54,255,128" width="350" type="filled" fill="0" globalopacitymod="1.8"/>
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
+				</rect>
+
+				<rect width="250" height="25" pos="0,-75" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+					<sprite depth="2" name="background" color="25,25,25,255" type="sliced" globalopacitymod="1.8"/>
+
+					<filledsprite depth="5" name="BarContent" color="0,200,54,128" width="250" type="filled" fill="0" globalopacitymod="1.8"/>
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
+				</rect>
+
+				<rect width="250" height="25" pos="0,-100" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+					<sprite depth="2" name="background" color="25,25,25,255" type="sliced" globalopacitymod="1.8"/>
+
+					<filledsprite depth="5" name="BarContent" color="0,255,255,128" width="250" type="filled" fill="0" globalopacitymod="1.8"/>
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
+				</rect>
+			</rect>
+
+			<rect name="hud" pos="90,150" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+				<panel width="400" height="35" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" style="press" sound="[recipe_click]" on_hover="true" >
+					<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="35" width="400" pivot="center" flip="Horizontally" color="[transparent]" />
+					<sprite depth="4" name="Icon" size="30,30" pos="-54,0" pivot="center" color="[transparent]"/>
+					<label depth="6" name="TextContent" pos="-30,0" font_size="22" color="[white]" justify="left" width="400" height="40" pivot="left"/>
+				</panel>
+			</rect>
+		</window>
+	</append>
+	<append xpath="/windows">
+		<window name="windowMiscTopLeft" anchor="LeftTop" pos="9,-9" width="480" height="43" >
+			<sprite depth="0" pos="62,-50" width="175" height="25" name="background" color="10,10,10,255" type="sliced" globalopacitymod="1.2"/>
+			
+			<sprite pos="62,-62" depth="1" height="75" width="75"  name="border" sprite="ui_game_filled_circle" color="10,10,10,255" pivot="center" globalopacitymod="1.4"/>
+			<sprite pos="62,-62" depth="2" height="75" width="75" name="background" sprite="ui_game_filled_circle" color="{xpcolor}" pivot="center" globalopacity="false" type="filled" fill="{xp}" filldirection="radial360" controller="ToolbeltWindow" xp_fill_speed="2.5"/>
+			<sprite pos="62,-62" depth="3" width="60" height="60" name="center" sprite="ui_game_filled_circle" color="25,25,25,255" pivot="center" globalopacity="false"/>
+
+			<label depth="4" pos="62,-62" width="75" height="75" pivot="center" justify="center" text="{cvar($LastPlayerLevel)}" effect="outline" font_size="26" controller="HUDStatBar" />
+
+			<sprite pos="110,-27" sprite="" color="255,255,255,255" globalopacitymod="1.8">
+				<label pos="0,-25" depth="20" width="300" height="30" text="Elevation: {mapelevation}" font_size="20" pivot="topleft" effect="outline" upper_case="true" justify="left" controller="MapStats"/>
+			</sprite>
+		</window>
+	</append>
+	<remove xpath="/windows/window[@name='windowToolbelt']"/>
+	<append xpath="/windows">
+		<window name="windowToolbelt" width="753" height="78" depth="5" anchor="CenterBottom" pos="-388, 92" backgroundcolor="10,10,10,255" controller="ToolbeltWindow" cursor_area="true" xp_fill_speed="2.5" >
+			<rect>
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="10,10,10,255" type="sliced" fillcenter="false" on_press="true" />
+				
+				<rect pos="3,-3" controller="Toolbelt">
+					<grid depth="10" name="inventory" rows="1" cols="10" pos="0,0" cell_width="75" cell_height="75" repeat_content="true">
+						<item_stack name="0"/>
+					</grid>
+					<grid depth="10" name="inventory2" rows="1" cols="10" pos="0,82" cell_width="75" cell_height="75" repeat_content="true" visible="{secondrow}">
+						<item_stack name="0"/>
+					</grid>
+				</rect>
+			</rect>
+		</window>
+	</append>
+	<set xpath="/windows/window[@name='windowGroupBars']/grid[@name='hud' and @controller='PartyEntryList']/@pos">9,-122</set>
+	<set xpath="/windows/window[@name='windowGroupBars']/grid[@name='hud' and @controller='CompanionEntryList']/@pos">9,-122</set>
+	<set xpath="/windows/window[@name='windowGroupBars']/sprite[@name='voiceStatus']/@pos">25,-102</set>
+</configs>

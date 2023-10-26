@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/entitygroups">
+		<entitygroup name="ScreamerRaidBoss">
+			<entity name="ScreamerRaidBoss" />
+		</entitygroup>
+	</append>
+</configs>

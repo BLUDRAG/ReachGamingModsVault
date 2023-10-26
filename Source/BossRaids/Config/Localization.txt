@@ -1,0 +1,4 @@
+Key,English
+
+ScreamerRaidBoss,"Titan Screamer"
+EntityLootContainerRaidBoss,"Raid Loot"

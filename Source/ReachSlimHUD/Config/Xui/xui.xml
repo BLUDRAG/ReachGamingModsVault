@@ -1,0 +1,17 @@
+<configs>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='compass']"/>
+	<append xpath="/xui/ruleset[@name='default']">
+		<window_group name="compass" actionSet="false">
+			<window name="windowCompass"/>
+			<window name="windowMiscTopLeft"/>
+			<window name="windowTargetBar" anchor="CenterTop" />
+			<window name="onScreenIcons" />
+		</window_group>
+	</append>
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='ingameMenu']"/>
+	<append xpath="/xui/ruleset[@name='default']">
+		<window_group name="ingameMenu" close_compass_on_open="true" >
+			<window name="ingameMenu" />
+		</window_group>
+	</append>
+</configs>

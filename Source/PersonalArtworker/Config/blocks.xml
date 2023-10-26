@@ -1,0 +1,66 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="Artwork 1x1">
+			<property name="Class" value="PersonalArtworker.Scripts.Blocks.ArtworkBlock, PersonalArtworker"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CanPickup" value="true"/>
+			<property name="Material" value="Mglass"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Assets/ArtworkRoot.unity3d?ArtworkRoot.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="paintingBen"/>
+			<property name="MaxDamage" value="200"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="Stacknumber" value="100"/>
+			<property name="FilterTags" value="MC_building,SC_decor"/>
+			<property name="SortOrder1" value="7000"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="DescriptionKey" value="PersonalArtworkDesc"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="3"/>
+			</property>
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+		</block>
+		<block name="Artwork 1x2">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+		</block>
+		<block name="Artwork 2x1">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+		</block>
+		<block name="Artwork 2x2">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+		</block>
+		<block name="Artwork 1x3">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+		</block>
+		<block name="Artwork 2x3">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="2,3,1"/>
+		</block>
+		<block name="Artwork 3x1">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="3,1,1"/>
+		</block>
+		<block name="Artwork 3x2">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="3,2,1"/>
+		</block>
+		<block name="Artwork 3x3">
+			<property name="Extends" value="Artwork 1x1"/>
+			<property name="MultiBlockDim" value="3,3,1"/>
+		</block>
+	</append>
+</configs>

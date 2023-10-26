@@ -1,0 +1,15 @@
+<configs>
+	<append xpath="/spawning">
+		<entityspawner name="ScreamerRaidBoss" dynamic="true" wrapMode="wrap">
+			<day value="*"><!--* means it is used when no day is specified -->
+				<property name="ResetToday" value="true" />
+				<property name="EntityGroupName" value="ScreamerRaidBoss" />
+				<property name="Time" value="Any" />
+				<property name="DelayBetweenSpawns" value="1" />
+				<property name="TotalAlive" value="1" />
+				<property name="TotalPerWave" value="1" />
+				<property name="AttackPlayerAtOnce" value="true" />
+			</day>
+		</entityspawner>
+	</append>
+</configs>

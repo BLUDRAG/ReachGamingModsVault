@@ -1,0 +1,10 @@
+Key,English
+
+PersonalArtworkDesc,Your own personal artwork!
+blockcommand_ResizeArtwork,Resize
+blockcommand_ImportArtwork,Import
+blockcommand_ArtworkColor,Color
+blockcommand_ArtworkLockAspect,Lock Aspect
+blockcommand_ArtworkUnlockAspect,Unlock Aspect
+blockcommand_ArtworkLegacyInputOn,Legacy Input ON
+blockcommand_ArtworkLegacyInputOff,Legacy Input OFF

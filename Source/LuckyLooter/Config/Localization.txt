@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+LuckyLooter_Tutorial,Quest,Quest Info,,,"Welcome to the Lucky Looter Mod!\n\nCrafting has been completely disabled, the only way to survive is to find loot and buy what you need from traders.\n\nGood luck!"
+LuckyLooter_Tutorial_title,Journal Tip,,,,"Lucky Looter"
+LuckyLooter_Tutorial_Info,Quest,Quest Info,,,Learn about the Lucky Looter Mod
+LuckyLooter_Tutorial_description,Quest,Quest Info,,,"Learn about the Lucky Looter Mod where crafting is disabled."

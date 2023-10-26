@@ -1,0 +1,5 @@
+<configs>
+	<set xpath="/windows/window[@name='menuBackground']">
+		<texture depth="1" color="[white]" texture="@modfolder:/Assets/Reachgaming_night_no_text.jpg" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+	</set>
+</configs>

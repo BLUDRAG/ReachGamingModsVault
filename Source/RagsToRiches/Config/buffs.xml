@@ -1,0 +1,19 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="At Home" name_key="" icon="ui_game_symbol_add" icon_color="100,200,100">
+		<stack_type value="ignore"/>
+		<display_value_key value="At Home"/> <display_value value="xxx"/>
+		<effect_group>
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.1"/>
+		</effect_group>
+		</buff>
+		<buff name="Squatting" name_key="" icon="ui_game_symbol_dysentery" icon_color="150,100,50">
+		<stack_type value="ignore"/>
+		<display_value_key value="Squatting"/> <display_value value="xxx"/>
+		</buff>
+		<buff name="Trespassing" name_key="" icon="ui_game_symbol_skull" icon_color="220,20,20">
+		<stack_type value="ignore"/>
+		<display_value_key value="Trespassing"/> <display_value value="xxx"/>
+		</buff>
+	</append>
+</configs>
