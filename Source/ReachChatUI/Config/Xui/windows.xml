@@ -1,0 +1,5 @@
+<configs>
+	<setattribute xpath="/windows/window[@name='chatoutput']/textlist" name="color">80,200,40,255</setattribute>
+	<setattribute xpath="/windows/window[@name='chat']/rect/combobox" name="enabled_color">205,100,50,255</setattribute>
+	<setattribute xpath="/windows/window[@name='chat']/rect/textfield" name="active_text_color">80,200,40,255</setattribute>
+</configs>
