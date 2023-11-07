@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="/quests/quest[@id='quest_BasicSurvival8']">
+		<reward type="Item" id="reachInfinityTree" value="1"/>
+	</append>
+</configs>

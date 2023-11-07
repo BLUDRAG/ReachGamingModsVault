@@ -1,0 +1,21 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="reachInfinityTree">
+			<property name="Extends" value="treeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="MaxDamage" value="99999999"/>
+			<property name="CustomIcon" value="treeMountainPine27m"/>
+			<property name="CustomIconTint" value="20,255,20"/>
+			<property name="Material" value="MtreeWoodLarge"/>
+			<property name="Model" value="@:Entities/Trees/ScotsPineMed01Prefab.prefab"/>
+			<property name="ModelOffset" value="0,-0.5,0"/>
+			<property name="MultiBlockDim" value="1,27,1"/>
+			<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+			<property name="Path" value="solid"/>
+			<drop event="Harvest" name="resourceWood" count="2000000000" tag="oreWoodHarvest"/>
+			<drop event="Destroy" name="reachInfinityTree" count="1"/>
+			<property name="SortOrder1" value="B903"/>
+			<property name="SortOrder2" value="0011"/>
+		</block>
+	</append>
+</configs>
