@@ -35,3 +35,15 @@ Only animals, dead or alive, will come after you during blood moons. Get 'em cri
 
 ### Reach Builder Tools (Credits to Mr. Reach)
 Adds new terrain manipulating tools. A builder's dream! All tools can be found by search for ReachBuilder in the creative menu.
+
+### Flush Terrain Blocks (Credits to Mr. Reach)
+Terrain blocks like sand and dirt will be flattened when placing blocks next to them. This removes the odd gap between terrain and building blocks.
+
+### Real Infestations (Credits to Blu)
+Increases the number of zombie spawns for infested quests.
+
+### Reach Chat UI (Credits to Mr. Reach)
+A simple mod that adds some color to the chat UI.
+
+### Reach Infinity Trees (Credits to Blu)
+Adds an incredibly durable tree that can be chopped almost forever. Also replantable if you ever break it!
