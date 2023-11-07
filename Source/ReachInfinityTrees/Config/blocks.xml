@@ -5,7 +5,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="MaxDamage" value="99999999"/>
 			<property name="CustomIcon" value="treeMountainPine27m"/>
-			<property name="CustomIconTint" value="20,255,20"/>
+			<property name="CustomIconTint" value="210,0,210"/>
 			<property name="Material" value="MtreeWoodLarge"/>
 			<property name="Model" value="@:Entities/Trees/ScotsPineMed01Prefab.prefab"/>
 			<property name="ModelOffset" value="0,-0.5,0"/>
