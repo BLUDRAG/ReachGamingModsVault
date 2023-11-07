@@ -56,3 +56,9 @@ Terrain blocks like sand and dirt will be flattened when placing blocks next to 
 
 ### Real Infestations (Credits to Blu)
 Increases the number of zombie spawns for infested quests.
+
+### Real Infestations (Credits to Mr. Reach)
+A simple mod that adds some color to the chat UI.
+
+### Real Infestations (Credits to Blu)
+Adds an incredibly durable tree that can be chopped almost forever. Also replantable if you ever break it!
