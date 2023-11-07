@@ -3,10 +3,9 @@
 		<block name="reachInfinityTree">
 			<property name="Extends" value="treeMaster"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="MaxDamage" value="99999999"/>
 			<property name="CustomIcon" value="treeMountainPine27m"/>
 			<property name="CustomIconTint" value="210,0,210"/>
-			<property name="Material" value="MtreeWoodLarge"/>
+			<property name="Material" value="MtreeWoodInfinity"/>
 			<property name="Model" value="@:Entities/Trees/ScotsPineMed01Prefab.prefab"/>
 			<property name="ModelOffset" value="0,-0.5,0"/>
 			<property name="MultiBlockDim" value="1,27,1"/>
