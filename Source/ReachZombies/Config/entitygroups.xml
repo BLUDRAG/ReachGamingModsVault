@@ -1,0 +1,5 @@
+<configs>
+	<csv xpath="//entitygroup[contains(@name, 'HordeStage') and contains(text(), 'Demo')]/text()" delim="\n" op="add">
+		reachZombiesKamikazeDemo, .1
+	</csv>
+</configs>

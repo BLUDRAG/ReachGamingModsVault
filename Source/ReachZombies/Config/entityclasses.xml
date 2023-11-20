@@ -1,8 +1,12 @@
 <configs>
-	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='ExplodeDelay']/@value">15</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='ExplodeHealthThreshold']/@value">1</set>
-	<append xpath="/entity_classes/entity_class[@name='zombieDemolition']/effect_group[@name='Base Effects']">
-		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurningElement"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$buffBurningElementDuration" operation="set" value="20"/>
+	<append xpath="/entity_classes">
+		<entity_class name="reachZombiesKamikazeDemo" extends="zombieDemolition">
+			<property name="ExplodeDelay" value="15"/>
+			<property name="ExplodeHealthThreshold" value="1"/>
+			<effect_group name="KamikazeEffects">
+				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$buffBurningElementDuration" operation="set" value="20"/>
+			</effect_group>
+		</entity_class>
 	</append>
 </configs>
