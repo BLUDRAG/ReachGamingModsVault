@@ -62,3 +62,6 @@ A simple mod that adds some color to the chat UI.
 
 ### Reach Infinity Trees (Credits to Blu)
 Adds an incredibly durable tree that can be chopped almost forever. Also replantable if you ever break it!
+
+### Reach Zombies (Credits to Mr. Reach & Blu)
+Unique zombies from the Reach Community!
