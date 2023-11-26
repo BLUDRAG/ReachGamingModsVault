@@ -1,0 +1,29 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="reachQuest_Satchel">
+			<property name="CreativeMode" value="None"/>
+			<property name="Class" value="QuestLoot"/>
+			<property name="LootList" value="questSatchel"/>
+			<property name="IndexName" value="FetchContainer"/>
+			<property name="CustomIconTint" value="80ff80"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="GndAlign" value="1"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="StabilityIgnore" value="true"/>
+			<property name="MaxDamage" value="500"/>
+			<drop event="Harvest" name="resourceCloth" count="2" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceCloth" count="1"/>
+			<property name="SortOrder1" value="LD01"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+	</append>
+</configs>

@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/gameevents">
+		<action_sequence name="startReachQuest_InfectionType-F">
+			<property name="action_type" value="Game"/>
+
+			<action class="AddQuest">
+				<property name="quest" value="reachQuest_InfectionType-F"/>
+				<property name="phase" value="1"/>
+			</action>
+			
+			<action class="BeltTooltip">
+				<property name="text" value="You have been [AA0000]infected [FFFFFF]by the [00AA00]Type-F [FFFFFF]virus!"/>
+			</action>
+			
+			<action class="BeltTooltip">
+				<property name="text" value="Find [55FF55]The Cure [FFFFFF]before it's too late!"/>
+			</action>
+		</action_sequence>
+		
+		<action_sequence name="reachQuest_InfectionType-F_OnDeath">
+			<property name="action_type" value="Game"/>
+			<property name="allow_while_dead" value="true"/>
+			
+			<action class="SpawnEntity">
+				<property name="entity_names" value="zombieWightFeral"/>
+				<property name="spawn_count" value="1"/>
+				<property name="air_spawn" value="false"/>
+				<property name="safe_spawn" value="true"/>
+				<property name="min_distance" value="0"/>
+				<property name="max_distance" value="1"/>
+			</action>
+		</action_sequence>
+	</append>
+</configs>

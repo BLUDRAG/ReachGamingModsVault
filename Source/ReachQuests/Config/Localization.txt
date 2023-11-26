@@ -1,0 +1,10 @@
+Key,Type,English
+
+reachQuest_InfectionType-F_name,Quest Info,[00AA00]Type-F [FFFFFF]Cure
+reachQuest_InfectionType-F_sub,Quest Info,Hunt For [55FF55]The Cure[FFFFFF]!
+reachQuest_Type-F_Cure,,[00AA00]Type-F [FFFFFF]Cure
+reachQuest_Type-F_Cure_desc,,Consume to cure the [00AA00]Type-F [FFFFFF]infection and escape death!
+reachQuest_InfectionType-F_desc,Quest Info,You have been infected by the [00AA00]Type-F [FFFFFF]virus. Make your way to the closest [E6B363]Pharmacy [FFFFFF]and find [55FF55]The Cure [FFFFFF]before you turn!
+reachQuest_InfectionType-F_Cured,,You have escaped the clutches of the [00AA00]Type-F [FFFFFF]virus!
+reachInfection_Type-F_shortdesc,,[00AA00]Type-F[FFFFFF]
+reachInfection_Type-F_longdesc,,"Normally when I get infected, the doors of death loom over my head. But this...this feels different."
