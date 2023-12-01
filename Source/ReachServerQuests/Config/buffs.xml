@@ -1,0 +1,50 @@
+<configs>
+	<append xpath="/buffs">		
+		<buff name="reachInfection_Type-F_InfectChance" hidden="true">
+			<duration value="1"/>
+			<effect_group>
+				<requirement name="!HasBuff" buff="reachInfection_Type-F"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+					<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="reachInfection_Type-F"/>
+			</effect_group>
+		</buff>
+	
+		<buff name="reachInfection_Type-F" name_key="reachInfection_Type-F_shortdesc" description_key="reachInfection_Type-F_longdesc" icon="ui_game_symbol_infection" icon_color="55,255,55">
+			<damage_type value="Disease"/>
+			<stack_type value="ignore"/>
+			<duration value="900"/>
+			<display_value value="duration"/>
+			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="startReachQuest_InfectionType-F"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="reachQuest_InfectionType-F_OnDeath"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$reachInfection_Type-F_Counter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$reachInfection_Type-F_Counter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="3"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="3"/>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity=".05" fade="5">
+					<requirement name="CVarCompare" cvar="$reachInfection_Type-F_Counter" operation="Equals" value="10"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity=".1" fade="5">
+					<requirement name="CVarCompare" cvar="$reachInfection_Type-F_Counter" operation="Equals" value="100"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity=".25" fade="5">
+					<requirement name="CVarCompare" cvar="$reachInfection_Type-F_Counter" operation="Equals" value="250"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity=".4" fade="5">
+					<requirement name="CVarCompare" cvar="$reachInfection_Type-F_Counter" operation="Equals" value="500"/>
+				</triggered_effect>
+				
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity=".5" fade="5">
+					<requirement name="CVarCompare" cvar="$reachInfection_Type-F_Counter" operation="Equals" value="750"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+	</append>
+</configs>
