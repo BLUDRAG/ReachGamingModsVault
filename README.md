@@ -68,3 +68,6 @@ Unique zombies from the Reach Community!
 
 ### Reach Quests (Credits to Mr. Reach & Blu)
 Unique quests from the Reach Community!
+
+### Reach Server Quests (Credits to Mr. Reach & Blu)
+Unique server quests from the Reach Community!
