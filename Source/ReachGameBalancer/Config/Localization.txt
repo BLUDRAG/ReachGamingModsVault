@@ -1,0 +1,5 @@
+Key,Type,English
+
+reachGameRebalancer_SkyHigh_name,Quest Info,[1133FF]Gyrocopter [FFFFFF]Investigation
+reachGameRebalancer_SkyHigh_sub,Quest Info,Find The Broken Down [1133FF]Gyrocopter[FFFFFF]!
+reachGameRebalancer_SkyHigh_desc,Quest Info,"Some bandits attempted to raid a heavily guarded POI. They were unsuccessful and suffered heavy casualties. The group was so badly wounded, they were left with no choice but to abandon their one and only [1133FF]Gyrocopter[FFFFFF]."

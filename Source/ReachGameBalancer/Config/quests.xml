@@ -1,0 +1,61 @@
+<configs>
+	<append xpath="/quests">
+		<quest id="reachGameRebalancer_SkyHigh">
+			<property name="name_key" value="reachGameRebalancer_SkyHigh_name" param1="name" />
+			<property name="subtitle_key" value="reachGameRebalancer_SkyHigh_sub"/>
+			<property name="description_key" value="reachGameRebalancer_SkyHigh_desc"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="completiontype" value="AutoComplete"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="add_to_tier_complete" value="false"/>
+			<property name="quest_type" value="reachGameRebalancer"/>			
+			<property name="difficulty_tier" value="6" param1="difficulty"/>
+			<property name="extra_tags" value="infested" />
+			<property name="poi_tier" value="5" />
+			<property name="spawn_multiplier" value="3.0" />
+			<property name="gamestage_mod" value="2.0"/>
+			<property name="gamestage_bonus" value="50"/>
+			
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest" />
+				<property name="poi_tier" value="5" param1="poi_tier" />
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally" />
+			</objective>
+
+			<objective type="ClearSleepers">
+				<property name="phase" value="3"/>
+				<property name="nav_object" value="sleeper_volume"/>
+			</objective>
+
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			
+			<reward type="Exp" value="30000"/>
+			<reward type="Item" id="vehicleGyrocopterPlaceable" ischosen="false" isfixed="true" value="1"/>
+		</quest>
+		
+		<!-- +++++++++++++++++++++++++++++++++ -->
+		
+		<!-- <quest id="reachQuest_">
+			
+		</quest> -->
+		
+		<!-- +++++++++++++++++++++++++++++++++ -->
+		
+		<quest_list id="reachGameRebalancer">
+			<quest id="reachGameRebalancer_SkyHigh" />
+		</quest_list>
+	</append>
+	
+	<!-- +++++++++++++++++++++++++++++++++ -->
+</configs>

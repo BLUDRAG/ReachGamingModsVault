@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/gameevents">
+		<action_sequence name="startReachGameRebalancer_SkyHigh">
+			<property name="action_type" value="Game"/>
+
+			<action class="AddQuest">
+				<property name="quest" value="reachGameRebalancer_SkyHigh"/>
+				<property name="phase" value="1"/>
+			</action>
+			
+			<action class="BeltTooltip">
+				<property name="text" value="Rumor has it a broken down [1133FF]Gyrocopter[FFFFFF] can be found in one of the nearby dangerous areas."/>
+			</action>
+			
+			<action class="BeltTooltip">
+				<property name="text" value="It may be worthwhile to investigate."/>
+			</action>
+		</action_sequence>
+		
+		<!-- +++++++++++++++++++++++++++++++++ -->
+	</append>
+</configs>

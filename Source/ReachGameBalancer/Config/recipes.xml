@@ -1,0 +1,3 @@
+<configs>
+	<remove xpath="/recipes/recipe[contains(@name,'Gyro')]"/>
+</configs>
