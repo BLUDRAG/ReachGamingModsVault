@@ -71,3 +71,6 @@ Unique quests from the Reach Community!
 
 ### Reach Server Quests (Credits to Mr. Reach & Blu)
 Unique server quests from the Reach Community!
+
+### Reach Game Rebalancer (Credits to Mr. Reach & Blu)
+Updates the overall balance of the game for long term playthroughs.
