@@ -1,6 +1,6 @@
 ﻿<configs>
 	<append xpath="/buffs/buff[@name='buffLevelUpTracking']/effect_group">
-		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="startReachGameRebalancer_SkyHigh">
+		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="startReachGameRebalancer_SkyHigh" allow_client_call="true">
 			<requirement name="PlayerLevel" operation="Equals" value="50"/>
 		</triggered_effect>
 	</append>

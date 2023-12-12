@@ -2,6 +2,7 @@
 	<append xpath="/gameevents">
 		<action_sequence name="startReachGameRebalancer_SkyHigh">
 			<property name="action_type" value="Game"/>
+			<property name="allow_user_trigger" value="true"/>
 
 			<action class="AddQuest">
 				<property name="quest" value="reachGameRebalancer_SkyHigh"/>
