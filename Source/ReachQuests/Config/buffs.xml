@@ -16,9 +16,9 @@
 			<display_value value="duration"/>
 			
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="startReachQuest_InfectionType-F"/>
+				<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="startReachQuest_InfectionType-F" allow_client_call="true"/>
 				<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
-				<triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="reachQuest_InfectionType-F_OnDeath"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="CallGameEvent" event="reachQuest_InfectionType-F_OnDeath" allow_client_call="true"/>
 				
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$reachInfection_Type-F_Counter" operation="set" value="0"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$reachInfection_Type-F_Counter" operation="add" value="1"/>

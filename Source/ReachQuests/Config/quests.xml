@@ -13,8 +13,8 @@
 			<property name="login_rally_reset" value="true"/>
 			<property name="shareable" value="false"/>
 			<property name="add_to_tier_complete" value="false"/>
-			<property name="quest_type" value="reachQuest"/>
-			<property name="extra_tags" value="reachquest_type-f" param1="extra_tags" />
+			<property name="quest_type" value="reachQuest"/>			
+			<property name="extra_tags" value="reachquest_type-f" param1="extra_tags" /> <!-- SINGLEPLAYER_ONLY -->
 			
 			<objective type="ClosestPOIGoto">
 				<property name="distance" value="10000"/>
@@ -44,10 +44,20 @@
 			<reward type="Item" id="reachQuest_Type-F_Cure" ischosen="false" isfixed="true" value="1"/>
 		</quest>
 		
+		<!-- +++++++++++++++++++++++++++++++++ -->
+		
+		<!-- <quest id="reachQuest_">
+			
+		</quest> -->
+		
+		<!-- +++++++++++++++++++++++++++++++++ -->
+		
 		<quest_list id="reachQuests">
 			<quest id="reachQuest_InfectionType-F" />
 		</quest_list>
 	</append>
+	
+	<!-- +++++++++++++++++++++++++++++++++ -->
 	
 	<append xpath="/quests/quest_items">
 		<quest_item id="3" name="Type-F Cure" item_template="reachQuest_Type-F_Cure" description_key="reachQuest_Type-F_Cure" icon="drugAntibiotics" icon_color="55,255,55"/>
