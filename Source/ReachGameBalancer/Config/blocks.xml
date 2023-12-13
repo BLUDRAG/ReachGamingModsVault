@@ -1,0 +1,4 @@
+<configs>
+	<remove xpath="/blocks/block/drop[@event='Harvest' and @name='ammoGasCan']"/>
+	<set xpath="/blocks/block/drop[@event='Harvest' and @name='resourceOilShale']/@count">10</set>
+</configs>

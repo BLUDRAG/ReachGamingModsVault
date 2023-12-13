@@ -1,3 +1,9 @@
 <configs>
 	<remove xpath="/recipes/recipe[contains(@name,'Gyro')]"/>
+	
+	<!-- +++++++++++++++++++++++++++++++++ -->
+	
+	<set xpath="/recipes/recipe[@name='cntDewCollector']/ingredient[@name='resourceWaterFilter']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='cntDewCollector']/ingredient[@name='resourceMetalPipe']/@count">15</set>
+	<set xpath="/recipes/recipe[@name='cntDewCollector']/ingredient[@name='resourceDuctTape']/@count">10</set>
 </configs>

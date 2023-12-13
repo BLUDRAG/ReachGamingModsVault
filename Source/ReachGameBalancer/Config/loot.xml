@@ -1,0 +1,5 @@
+<configs>
+	<remove xpath="/lootcontainers/lootgroup/item[@name='ammoGasCan']"/>
+	<remove xpath="/lootcontainers/lootcontainer[@name='gasPump']/item[@name='ammoGasCan']"/>
+	<remove xpath="/lootcontainers/lootcontainer[@name='gasBarrel']/item[@name='ammoGasCan']"/>
+</configs>
