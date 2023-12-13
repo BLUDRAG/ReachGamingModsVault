@@ -1,0 +1,39 @@
+<configs>
+	<append xpath="/entity_classes">
+		<entity_class name="reachQuests_ImmortalWight_Template" extends="zombieWightFeral">
+			<property name="TimeStayAfterDeath" value="5"/>
+			<property name="DeadBodyHitPoints" value="1000000"/>
+		</entity_class>
+	
+		<entity_class name="reachQuests_ImmortalWight_Stage1" extends="reachQuests_ImmortalWight_Template">
+			<effect_group name="reachQuest_Resurrection">
+				<passive_effect name="HealthMax" operation="base_set" value="1000,1500"/>
+				
+				<triggered_effect trigger="onOtherDamagedSelf" action="CallGameEvent" event="reachQuests_ImmortalWightRevive_Stage2">
+					<requirement name="StatCompareCurrent" stat="Health" operation="LTE" value="0"/>
+					<requirement name="IsAlive" target="self"/>
+				</triggered_effect>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="reachQuests_ImmortalWight_Stage2" extends="reachQuests_ImmortalWight_Template">
+			<effect_group name="reachQuest_Resurrection">
+				<passive_effect name="HealthMax" operation="base_set" value="2000,2500"/>
+				
+				<triggered_effect trigger="onOtherDamagedSelf" action="CallGameEvent" event="reachQuests_ImmortalWightRevive_Stage3">
+					<requirement name="StatCompareCurrent" stat="Health" operation="LTE" value="0"/>
+					<requirement name="IsAlive" target="self"/>
+				</triggered_effect>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="reachQuests_ImmortalWight_Stage3" extends="reachQuests_ImmortalWight_Template">
+			<effect_group name="reachQuest_Resurrection_Stage3">
+				<passive_effect name="HealthMax" operation="base_set" value="4000,5000"/>
+			</effect_group>
+		</entity_class>
+		
+		<!-- +++++++++++++++++++++++++++++++++ -->
+		
+	</append>
+</configs>

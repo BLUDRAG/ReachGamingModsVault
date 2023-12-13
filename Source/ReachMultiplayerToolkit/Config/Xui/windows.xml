@@ -1,0 +1,5 @@
+<configs>
+	<insertAfter xpath="/windows/window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']">
+		<texture name="ItemBackground" size="603,346" depth="10" pos="0,-46" material="Materials/Transparent Colored" texture="@https://i.imgur.com/C2E10mS.jpg"/>
+	</insertAfter>
+</configs>
