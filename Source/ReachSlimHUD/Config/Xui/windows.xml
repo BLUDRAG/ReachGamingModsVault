@@ -1,7 +1,7 @@
 <configs>
 	<remove xpath="/windows/window[@name='HUDLeftStatBars']"/>
 	<append xpath="/windows">
-		<window name="HUDLeftStatBars">
+		<window name="HUDLeftStatBars" anchor="LeftBottom">
 			<rect name="hud" pos="9,136" rows="2" cols="1" width="168" side="right">
 				<rect width="300" height="25" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
 					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
