@@ -4,44 +4,44 @@
 		<window name="HUDLeftStatBars" anchor="LeftBottom">
 			<rect name="hud" pos="9,136" rows="2" cols="1" width="168" side="right">
 				<rect width="300" height="25" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
-					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
-					<filledsprite depth="3" name="background" sprite="right_click_9_slice" color="55,55,55,255" type="filled" fill="1" globalopacitymod="1.8"/>
+					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod=".85"/>
+					<filledsprite depth="3" name="background" sprite="right_click_9_slice" color="55,55,55,255" type="filled" fill="1" globalopacitymod=".95"/>
 
-					<filledsprite depth="4" name="BarContent" sprite="Highlight - Thin" color="150,150,150,128" type="filled" fill="0" globalopacitymod="1.8"/>
+					<filledsprite depth="4" name="BarContent" sprite="Highlight - Thin" color="150,150,150,128" type="filled" fill="{statfill}" globalopacitymod="1.8"/>
 					<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
 					<label depth="6" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrent}" width="75" height="35"/>
 				</rect>
 
 				<rect width="350" height="25" pos="0,-25" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
-					<filledsprite depth="3" name="background" sprite="right_click_9_slice" color="55,55,55,255" width="350" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.8"/>
+					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod=".85"/>
+					<filledsprite depth="3" name="background" sprite="right_click_9_slice" color="55,55,55,255" width="350" type="filled" fill="{statmodifiedmax}" globalopacitymod=".95"/>
 
-					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="220,0,0,128" width="350" type="filled" fill="0" globalopacitymod="1.8"/>
+					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="220,0,0,128" width="350" type="filled" fill="{statfill}" globalopacitymod="1.8"/>
 					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
 					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
 				</rect>
 
 				<rect width="350" height="25" pos="0,-50" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod="1.8"/>
-					<filledsprite depth="3" name="background" sprite="right_click_9_slice" color="55,55,55,255" width="350" type="filled" fill="{statmodifiedmax}" globalopacitymod="1.8"/>
+					<sprite depth="2" name="background" sprite="right_click_9_slice" color="10,10,10,255" type="sliced" globalopacitymod=".85"/>
+					<filledsprite depth="3" name="background" sprite="right_click_9_slice" color="55,55,55,255" width="350" type="filled" fill="{statmodifiedmax}" globalopacitymod=".95"/>
 
-					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="0,54,255,128" width="350" type="filled" fill="0" globalopacitymod="1.8"/>
+					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="0,54,255,128" width="350" type="filled" fill="{statfill}" globalopacitymod="1.8"/>
 					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
 					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
 				</rect>
 
 				<rect width="250" height="25" pos="0,-75" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-					<sprite depth="2" name="background" sprite="right_click_9_slice" color="55,55,55,255" type="sliced" globalopacitymod="1.8"/>
+					<sprite depth="2" name="background" sprite="right_click_9_slice" color="55,55,55,255" type="sliced" globalopacitymod=".95"/>
 
-					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="0,200,54,128" width="250" type="filled" fill="0" globalopacitymod="1.8"/>
+					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="0,200,54,128" width="250" type="filled" fill="{statfill}" globalopacitymod="1.8"/>
 					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_fork" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
 					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
 				</rect>
 
 				<rect width="250" height="25" pos="0,-100" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-					<sprite depth="2" name="background" sprite="right_click_9_slice" color="55,55,55,255" type="sliced" globalopacitymod="1.8"/>
+					<sprite depth="2" name="background" sprite="right_click_9_slice" color="55,55,55,255" type="sliced" globalopacitymod=".95"/>
 
-					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="0,255,255,128" width="250" type="filled" fill="0" globalopacitymod="1.8"/>
+					<filledsprite depth="5" name="BarContent" sprite="Highlight - Thin" color="0,255,255,128" width="250" type="filled" fill="{statfill}" globalopacitymod="1.8"/>
 					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" size="20,20" pos="13,-13" pivot="center" foregroundlayer="true"/>
 					<label depth="7" name="TextContent" pos="30,-12" font_size="16" color="[white]" justify="right" pivot="left" text="{statcurrentwithmax}" width="75" height="35"/>
 				</rect>
